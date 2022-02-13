@@ -105,6 +105,41 @@
 
         </div>
       
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="link black dim">
+        如何用hugo搭建个人博客
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      如何用hugo搭建个人博客（windows环境） hugo的官网提供了十分详细的操作步骤，点击这里进行查看。
+一、 下载安装hugo 1.在官网提供的地址下找到Windows版本的文件进行下载，如下图，可选择32位或64位。下载完成后，解压待用； 2.将解压后的hugo.exe放到bin目录下，例如F:\Hugo\bin\，然后将该路径添加到环境变量中；
+3.在命令行中执行hugo -version，出现版本号，则安装成功。
+二、生成站点 假设要创建站点存放在F:\Hugo\Sites\目录中，在命令行切换到该目录下，执行
+$ hugo new site 文件夹名称 文件夹名称为：github用户名(小写).github.io-creator,例如：soohea.github.io-creator；
+执行后，在hugo目录下就会生成一个名叫soohea.github.io-creator的站点文件夹。
+用vscode打开这个文件夹：
+$ code soohea.github.io-creator 可以看到已经自动生成了一些文件夹
+有如上图所示的目录结构：
+  archetypes　(存放default.md，头文件格式，每次新建文章默认显示的头部信息在此修改)
+  content　(存放博客文章，markdown格式文件)
+  data　(存放自定义或者导入的模板)
+  layouts　(存放网站的数据模板)
+  static　(存放图片、css、js等静态资源)
+  themes　(存放主题文件，每个主题都是一个独立的文件夹)
+  config.toml　(网站配置文件)
+  三、添加主题 在官网选择自己喜欢的主题，这里以Ananke主题为例，先下载该主题，在vscode的命令行输入：
+git init git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke 之后将Ananke主题添加到网站的配置中：
+echo theme = \&quot;ananke\&quot; &gt;&gt; config.toml 这一步注意一定要提前下载配置好git。
+    </div>
+  </div>
+</div>
+
+        </div>
+      
     </section></article>
 
     </main>
